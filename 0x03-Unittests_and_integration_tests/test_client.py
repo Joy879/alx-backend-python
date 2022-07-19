@@ -48,7 +48,6 @@ class TestGithubOrgClient(unittest.TestCase):
             mock_get.assert_called_once
             mock_pub.assert_called_once
 
-
     @parameterized.expand([
         ({"license": {"key": "my_license"}}, "my_license", True),
         ({"license": {"key": "other_license"}}, "my_license", False),
